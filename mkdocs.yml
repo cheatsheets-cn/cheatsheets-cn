@@ -1,0 +1,15 @@
+site_name: Cheatsheets CN
+repo_url: https://github.com/cqroot/cheatsheets-cn
+site_url: https://cqroot.github.io/cheatsheets-cn/
+theme:
+  name: material
+  features:
+    - navigation.tabs
+  palette:
+    primary: white
+extra_css:
+  - stylesheets/extra.css
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
