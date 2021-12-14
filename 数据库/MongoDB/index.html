@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://cqroot.github.io/cheatsheets-cn/%E5%B7%A5%E5%85%B7/tmux/">
+        <link rel="canonical" href="https://cqroot.github.io/cheatsheets-cn/%E6%95%B0%E6%8D%AE%E5%BA%93/MongoDB/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.1">
     
     
       
-        <title>Tmux - Cheatsheets CN</title>
+        <title>MongoDB - Cheatsheets CN</title>
       
     
     
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tmux
+              MongoDB
             
           </span>
         </div>
@@ -178,6 +178,22 @@
         
   
   
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../%E5%B7%A5%E5%85%B7/Tmux/" class="md-tabs__link">
+        工具
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
     
   
 
@@ -187,7 +203,7 @@
   
     <li class="md-tabs__item">
       <a href="./" class="md-tabs__link md-tabs__link--active">
-        工具
+        数据库
       </a>
     </li>
   
@@ -258,14 +274,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
@@ -286,6 +300,56 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%B7%A5%E5%85%B7/Tmux/" class="md-nav__link">
+        Tmux
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          数据库
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="数据库" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          数据库
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
     
   
   
@@ -296,7 +360,7 @@
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Tmux
+        MongoDB
       </a>
       
     </li>
@@ -322,39 +386,45 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/cqroot/cheatsheets-cn/edit/master/docs/工具/tmux.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/cqroot/cheatsheets-cn/edit/master/docs/数据库/MongoDB.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-  <h1>Tmux</h1>
+  <h1>MongoDB</h1>
 
 <details class="note" open="open">
-<summary>会话</summary>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>PREFIX<span class="o">}</span> s                  <span class="c1"># 从列表中选择会话</span>
-<span class="o">{</span>PREFIX<span class="o">}</span> $                  <span class="c1"># 重命名当前会话</span>
-</code></pre></div>
+<summary>数据库</summary>
+<p><table class="cs-table">
+<tr><td> use DATABASE_NAME </td><td> 切换到指定数据库，如不存在则新建 </td></tr>
+<tr><td> db                </td><td> 查看当前数据库 </td></tr>
+<tr><td> show dbs          </td><td> 查看所有数据库 </td></tr>
+</table></p>
 </details>
 <details class="note" open="open">
-<summary>窗口</summary>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>PREFIX<span class="o">}</span> w                  <span class="c1"># 从列表中选择窗口</span>
-<span class="o">{</span>PREFIX<span class="o">}</span> c                  <span class="c1"># 创建一个新的窗口</span>
-<span class="o">{</span>PREFIX<span class="o">}</span> ,                  <span class="c1"># 重命名当前窗口</span>
-<span class="o">{</span>PREFIX<span class="o">}</span> p                  <span class="c1"># 选择上一个窗口</span>
-<span class="o">{</span>PREFIX<span class="o">}</span> n                  <span class="c1"># 选择下一个窗口</span>
-<span class="o">{</span>PREFIX<span class="o">}</span> :swap-window -t <span class="m">0</span>  <span class="c1"># 将当前窗口和窗口 0 交换</span>
-</code></pre></div>
+<summary>集合</summary>
+<p><table class="cs-table">
+<tr><td> show collections </td><td> 查看所有集合 </td></tr>
+</table></p>
 </details>
 <details class="note" open="open">
-<summary>面板</summary>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>PREFIX<span class="o">}</span> x                  <span class="c1"># 关闭当前面板</span>
-</code></pre></div>
-</details>
-<details class="note" open="open">
-<summary>其他</summary>
-<div class="highlight"><pre><span></span><code><span class="o">{</span>PREFIX<span class="o">}</span> t                  <span class="c1"># 显示时钟</span>
-<span class="o">{</span>PREFIX<span class="o">}</span> ?                  <span class="c1"># 列出快捷键绑定</span>
-</code></pre></div>
+<summary>用户</summary>
+<p><table class="cs-table">
+<tr><td> <pre>use admin
+db.system.users.find().pretty()</pre> </td><td> 查看所有用户 </td></tr>
+<tr><td> show users </td><td> 查看当前数据库下所有用户 </td></tr>
+<tr><td> <pre>db.createUser({
+    user:"USERNAME",
+    pwd:"PASSWORD",
+    roles:[
+        {role:"readWrite", db:"mydb"},
+    ]
+})</pre> </td><td> 创建用户 </td></tr>
+<tr><td> <pre>db.grantRolesToUser(
+    "USERNAME",
+    [{role:"readWrite", db:"mydb"}]
+)</pre> </td><td> 修改用户权限 </td></tr>
+</table></p>
 </details>
 
               
@@ -369,7 +439,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Cheatsheets CN" rel="prev">
+        <a href="../../%E5%B7%A5%E5%85%B7/Tmux/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tmux" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -378,7 +448,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Cheatsheets CN
+              Tmux
             </div>
           </div>
         </a>
