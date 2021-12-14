@@ -1,4 +1,42 @@
-.md-typeset pre>code {
-    font-size: 14px;
-    font-family: "Cascadia Code", "Fira Code", Consolas;
+:root {
+  --cs-code-font: "Cascadia Code", "Fira Code", Consolas;
+}
+
+.md-typeset pre > code {
+  font-size: 14px;
+  font-family: var(--cs-code-font);
+}
+
+.md-typeset table.cs-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.md-typeset table.cs-table tr {
+  border: 1px solid #e0e0e0;
+}
+
+.md-typeset table.cs-table tr td {
+  padding: 10px;
+}
+
+.md-typeset table.cs-table tr td:nth-child(1),
+.md-typeset table.cs-table tr td:nth-child(1) pre {
+  font-family: var(--cs-code-font);
+  font-size: 14px;
+  color: black;
+  background-color: #f5f5f5;
+}
+
+.md-typeset table.cs-table tr td:nth-child(1) {
+  width: 400px;
+}
+
+.md-typeset table.cs-table tr td:nth-child(1) pre {
+  margin: 0;
+  padding: 0;
+}
+
+.md-typeset table.cs-table tr td:nth-child(2) {
+  vertical-align: middle;
 }

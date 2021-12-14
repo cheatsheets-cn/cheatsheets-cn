@@ -1,3 +1,3 @@
 # Cheatsheets CN
 
-开发速查表。
+开发者速查表。
