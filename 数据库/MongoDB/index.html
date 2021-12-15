@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://cqroot.github.io/cheatsheets-cn/%E6%95%B0%E6%8D%AE%E5%BA%93/MongoDB/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.2">
     
     
       
@@ -19,7 +19,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.23b6d78a.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f7951f6f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
@@ -396,34 +396,34 @@
 <details class="note" open="open">
 <summary>数据库</summary>
 <p><table class="cs-table">
-<tr><td> use DATABASE_NAME </td><td> 切换到指定数据库，如不存在则新建 </td></tr>
-<tr><td> db                </td><td> 查看当前数据库 </td></tr>
-<tr><td> show dbs          </td><td> 查看所有数据库 </td></tr>
+<tr><td><pre>use DATABASE_NAME</pre></td><td><pre>切换到指定数据库，如不存在则新建</pre></td></tr>
+<tr><td><pre>db</pre></td><td><pre>查看当前数据库</pre></td></tr>
+<tr><td><pre>show dbs</pre></td><td><pre>查看所有数据库</pre></td></tr>
 </table></p>
 </details>
 <details class="note" open="open">
 <summary>集合</summary>
 <p><table class="cs-table">
-<tr><td> show collections </td><td> 查看所有集合 </td></tr>
+<tr><td><pre>show collections</pre></td><td><pre>查看所有集合</pre></td></tr>
 </table></p>
 </details>
 <details class="note" open="open">
 <summary>用户</summary>
 <p><table class="cs-table">
-<tr><td> <pre>use admin
-db.system.users.find().pretty()</pre> </td><td> 查看所有用户 </td></tr>
-<tr><td> show users </td><td> 查看当前数据库下所有用户 </td></tr>
-<tr><td> <pre>db.createUser({
+<tr><td><pre>use admin
+db.system.users.find().pretty()</pre></td><td><pre>查看所有用户</pre></td></tr>
+<tr><td><pre>show users</pre></td><td><pre>查看当前数据库下所有用户</pre></td></tr>
+<tr><td><pre>db.createUser({
     user:"USERNAME",
     pwd:"PASSWORD",
     roles:[
         {role:"readWrite", db:"mydb"},
     ]
-})</pre> </td><td> 创建用户 </td></tr>
-<tr><td> <pre>db.grantRolesToUser(
+})</pre></td><td><pre>创建用户</pre></td></tr>
+<tr><td><pre>db.grantRolesToUser(
     "USERNAME",
     [{role:"readWrite", db:"mydb"}]
-)</pre> </td><td> 修改用户权限 </td></tr>
+)</pre></td><td><pre>修改用户权限</pre></td></tr>
 </table></p>
 </details>
 
@@ -476,10 +476,10 @@ db.system.users.find().pretty()</pre> </td><td> 查看所有用户 </td></tr>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.c7dec7e7.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.0bbba5b5.min.js"}</script>
     
     
-      <script src="../../assets/javascripts/bundle.da79ceb7.min.js"></script>
+      <script src="../../assets/javascripts/bundle.649a939e.min.js"></script>
       
     
   </body>
