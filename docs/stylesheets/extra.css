@@ -2,11 +2,6 @@
   --cs-code-font: "Cascadia Code", "Fira Code", Consolas;
 }
 
-.md-typeset pre > code {
-  font-size: 14px !important;
-  font-family: var(--cs-code-font) !important;
-}
-
 .md-typeset table.cs-table {
   border-collapse: collapse !important;
   width: 100% !important;
@@ -17,14 +12,18 @@
 }
 
 .md-typeset table.cs-table tr td {
-  padding: 10px !important;
+  vertical-align: middle !important;
+  padding: 0 10px !important;
+}
+
+.md-typeset table.cs-table tr td pre {
+  font-family: var(--cs-code-font) !important;
+  font-size: 14px !important;
+  color: black !important;
 }
 
 .md-typeset table.cs-table tr td:nth-child(1),
 .md-typeset table.cs-table tr td:nth-child(1) pre {
-  font-family: var(--cs-code-font) !important;
-  font-size: 14px !important;
-  color: black !important;
   background-color: #f5f5f5 !important;
 }
 
@@ -35,8 +34,4 @@
 .md-typeset table.cs-table tr td:nth-child(1) pre {
   margin: 0 !important;
   padding: 0 !important;
-}
-
-.md-typeset table.cs-table tr td:nth-child(2) {
-  vertical-align: middle !important;
 }
