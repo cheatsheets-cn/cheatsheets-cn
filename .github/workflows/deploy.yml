@@ -16,7 +16,7 @@ jobs:
       - name: Install and Build
         run: |
           pip install --no-cache-dir mkdocs mkdocs-material
-          python extensions/cstable/setup.py install
+          cd extensions/cstable/; python setup.py install; cd ../../
           mkdocs build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.7
