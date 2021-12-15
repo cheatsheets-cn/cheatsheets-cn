@@ -20,6 +20,7 @@ nav:
       - 简介: index.md
   - 数据库:
       - MongoDB: databases/mongodb.md
+      - SQLite: databases/sqlite.md
   - 工具:
       - Git: tools/git.md
       - Tmux: tools/tmux.md
