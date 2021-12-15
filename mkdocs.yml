@@ -14,3 +14,11 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - cstable
+
+nav:
+  - 主页:
+      - 简介: index.md
+  - 数据库:
+      - MongoDB: databases/mongodb.md
+  - 工具:
+      - Tmux: tools/tmux.md
