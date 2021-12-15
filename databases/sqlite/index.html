@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://cqroot.github.io/cheatsheets-cn/tools/tmux/">
+        <link rel="canonical" href="https://cqroot.github.io/cheatsheets-cn/databases/sqlite/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.2">
     
     
       
-        <title>Tmux - Cheatsheets CN</title>
+        <title>SQLite - Cheatsheets CN</title>
       
     
     
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Tmux
+              SQLite
             
           </span>
         </div>
@@ -182,13 +182,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../databases/mongodb/" class="md-tabs__link">
+      <a href="../mongodb/" class="md-tabs__link md-tabs__link--active">
         数据库
       </a>
     </li>
@@ -198,15 +200,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../git/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../tools/git/" class="md-tabs__link">
         工具
       </a>
     </li>
@@ -311,12 +311,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -339,7 +341,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../databases/mongodb/" class="md-nav__link">
+      <a href="../mongodb/" class="md-nav__link">
         MongoDB
       </a>
     </li>
@@ -351,11 +353,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../databases/sqlite/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         SQLite
       </a>
+      
     </li>
   
 
@@ -373,14 +383,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -403,7 +411,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../git/" class="md-nav__link">
+      <a href="../../tools/git/" class="md-nav__link">
         Git
       </a>
     </li>
@@ -415,19 +423,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../tools/tmux/" class="md-nav__link">
         Tmux
       </a>
-      
     </li>
   
 
@@ -451,42 +451,18 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/cqroot/cheatsheets-cn/edit/master/docs/tools/tmux.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/cqroot/cheatsheets-cn/edit/master/docs/databases/sqlite.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-  <h1>Tmux</h1>
+  <h1>SQLite</h1>
 
 <details class="note" open="open">
-<summary>会话</summary>
+<summary>设置</summary>
 <p><table class="cs-table">
-<tr><td><pre>{PREFIX} s</pre></td><td><pre>从列表中选择会话</pre></td></tr>
-<tr><td><pre>{PREFIX} $</pre></td><td><pre>重命名当前会话</pre></td></tr>
-</table></p>
-</details>
-<details class="note" open="open">
-<summary>窗口</summary>
-<p><table class="cs-table">
-<tr><td><pre>{PREFIX} w</pre></td><td><pre>从列表中选择窗口</pre></td></tr>
-<tr><td><pre>{PREFIX} c</pre></td><td><pre>创建一个新的窗口</pre></td></tr>
-<tr><td><pre>{PREFIX} ,</pre></td><td><pre>重命名当前窗口</pre></td></tr>
-<tr><td><pre>{PREFIX} p</pre></td><td><pre>选择上一个窗口</pre></td></tr>
-<tr><td><pre>{PREFIX} n</pre></td><td><pre>选择下一个窗口</pre></td></tr>
-<tr><td><pre>{PREFIX} :swap-window -t 0</pre></td><td><pre>将当前窗口和窗口 0 交换</pre></td></tr>
-</table></p>
-</details>
-<details class="note" open="open">
-<summary>面板</summary>
-<p><table class="cs-table">
-<tr><td><pre>{PREFIX} x</pre></td><td><pre>关闭当前面板</pre></td></tr>
-</table></p>
-</details>
-<details class="note" open="open">
-<summary>其他</summary>
-<p><table class="cs-table">
-<tr><td><pre>{PREFIX} t</pre></td><td><pre>显示时钟</pre></td></tr>
-<tr><td><pre>{PREFIX} ?</pre></td><td><pre>列出快捷键绑定</pre></td></tr>
+<tr><td><pre>.header on</pre></td><td><pre>输出时显示表头</pre></td></tr>
+<tr><td><pre>.mode column</pre></td><td><pre>输出时对齐列</pre></td></tr>
 </table></p>
 </details>
 
@@ -502,7 +478,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../git/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Git" rel="prev">
+        <a href="../mongodb/" class="md-footer__link md-footer__link--prev" aria-label="Previous: MongoDB" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -511,11 +487,26 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Git
+              MongoDB
             </div>
           </div>
         </a>
       
+      
+        
+        <a href="../../tools/git/" class="md-footer__link md-footer__link--next" aria-label="Next: Git" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Git
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   

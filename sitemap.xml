@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://cqroot.github.io/cheatsheets-cn/databases/sqlite/</loc>
+         <lastmod>2021-12-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://cqroot.github.io/cheatsheets-cn/tools/git/</loc>
          <lastmod>2021-12-15</lastmod>
          <changefreq>daily</changefreq>
