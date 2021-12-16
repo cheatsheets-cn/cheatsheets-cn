@@ -19,6 +19,7 @@ nav:
   - 主页:
       - 简介: index.md
   - 数据库:
+      - MySQL: databases/mysql.md
       - MongoDB: databases/mongodb.md
       - SQLite: databases/sqlite.md
   - 工具:
