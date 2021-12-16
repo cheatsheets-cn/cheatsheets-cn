@@ -1,11 +1,11 @@
-???+ note "会话"
+???+ cs "会话"
 
     >cstable
     >| {PREFIX} s || 从列表中选择会话 |<
     >| {PREFIX} $ || 重命名当前会话 |<
     <cstable
 
-???+ note "窗口"
+???+ cs "窗口"
 
     >cstable
     >| {PREFIX} w                 || 从列表中选择窗口 |<
@@ -16,13 +16,13 @@
     >| {PREFIX} :swap-window -t 0 || 将当前窗口和窗口 0 交换 |<
     <cstable
 
-???+ note "面板"
+???+ cs "面板"
 
     >cstable
     >| {PREFIX} x || 关闭当前面板 |<
     <cstable
 
-???+ note "其他"
+???+ cs "其他"
 
     >cstable
     >| {PREFIX} t || 显示时钟 |<

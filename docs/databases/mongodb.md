@@ -1,4 +1,4 @@
-???+ note "数据库"
+???+ cs "数据库"
 
     >cstable
     >| use DATABASE_NAME || 切换到指定数据库，如不存在则新建 |<
@@ -6,13 +6,13 @@
     >| show dbs          || 查看所有数据库 |<
     <cstable
 
-???+ note "集合"
+???+ cs "集合"
 
     >cstable
     >| show collections || 查看所有集合 |<
     <cstable
 
-???+ note "用户"
+???+ cs "用户"
 
     >cstable
     >| use admin

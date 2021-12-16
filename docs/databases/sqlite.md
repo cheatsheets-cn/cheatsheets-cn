@@ -1,4 +1,4 @@
-???+ note "设置"
+???+ cs "设置"
 
     >cstable
     >| .header on || 输出时显示表头 |<
