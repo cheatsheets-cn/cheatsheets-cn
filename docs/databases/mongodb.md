@@ -30,3 +30,17 @@
         [{role:"readWrite", db:"mydb"}]
     ) || 修改用户权限 |<
     <cstable
+
+???+ cs "文档"
+
+    **删**
+
+    >cstable
+    >| db.collection.remove({}) || 删除符合条件的文档 |<
+    <cstable
+
+    **查**
+
+    >cstable
+    >| db.collection.count({}) || 查看符合条件文档的数目 |<
+    <cstable
