@@ -1,5 +1,7 @@
 :root {
   --cs-code-font: "Cascadia Code", "Fira Code", Consolas;
+  --md-admonition-cs-icon: url("icons/code-greater-than.svg");
+  --md-admonition-cs-color: 68, 138, 255;
 }
 
 .md-typeset table.cs-table {
@@ -34,4 +36,20 @@
 .md-typeset table.cs-table tr td:nth-child(1) pre {
   margin: 0 !important;
   padding: 0 !important;
+}
+
+.md-typeset .admonition.cs,
+.md-typeset details.cs {
+  border-color: rgb(var(--md-admonition-cs-color));
+}
+.md-typeset .cs > .admonition-title,
+.md-typeset .cs > summary {
+  background-color: rgba(var(--md-admonition-cs-color), 0.1);
+  border-color: rgb(var(--md-admonition-cs-color));
+}
+.md-typeset .cs > .admonition-title::before,
+.md-typeset .cs > summary::before {
+  background-color: rgb(var(--md-admonition-cs-color));
+  -webkit-mask-image: var(--md-admonition-cs-icon);
+  mask-image: var(--md-admonition-cs-icon);
 }
