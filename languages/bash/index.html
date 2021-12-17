@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://cqroot.github.io/cheatsheets-cn/databases/mysql/">
+        <link rel="canonical" href="https://cqroot.github.io/cheatsheets-cn/languages/bash/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.2">
     
     
       
-        <title>MySQL - Cheatsheets CN</title>
+        <title>Bash - Cheatsheets CN</title>
       
     
     
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MySQL
+              Bash
             
           </span>
         </div>
@@ -182,22 +182,6 @@
         
   
   
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../languages/bash/" class="md-tabs__link">
-        语言
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
     
   
 
@@ -207,6 +191,22 @@
   
     <li class="md-tabs__item">
       <a href="./" class="md-tabs__link md-tabs__link--active">
+        语言
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../databases/mysql/" class="md-tabs__link">
         数据库
       </a>
     </li>
@@ -327,12 +327,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -353,11 +355,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../languages/bash/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Bash
       </a>
+      
     </li>
   
 
@@ -375,14 +385,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
       
       
@@ -403,19 +411,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../databases/mysql/" class="md-nav__link">
         MySQL
       </a>
-      
     </li>
   
 
@@ -427,7 +427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mongodb/" class="md-nav__link">
+      <a href="../../databases/mongodb/" class="md-nav__link">
         MongoDB
       </a>
     </li>
@@ -441,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../sqlite/" class="md-nav__link">
+      <a href="../../databases/sqlite/" class="md-nav__link">
         SQLite
       </a>
     </li>
@@ -529,30 +529,20 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/cqroot/cheatsheets-cn/edit/master/docs/databases/mysql.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/cqroot/cheatsheets-cn/edit/master/docs/languages/bash.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-  <h1>MySQL</h1>
+  <h1>Bash</h1>
 
 <details class="cs" open="open">
-<summary>数据库</summary>
+<summary>代码片段</summary>
 <p><table class="cs-table">
-<tr><td><pre>SHOW DATABASES;</pre></td><td><pre>显示所有数据库</pre></td></tr>
-<tr><td><pre>DROP DATABASE db_name;</pre></td><td><pre>删除指定数据库</pre></td></tr>
-</table></p>
-</details>
-<details class="cs" open="open">
-<summary>索引</summary>
-<p><table class="cs-table">
-<tr><td><pre>SHOW INDEX FROM table_name;</pre></td><td><pre>查看指定表的索引</pre></td></tr>
-</table></p>
-</details>
-<details class="cs" open="open">
-<summary>SELECT</summary>
-<p><table class="cs-table">
-<tr><td><pre>SELECT DISTINCT column_name FROM table_name;</pre></td><td><pre>从表中查询指定列去重结果</pre></td></tr>
+<tr><td><pre>cat FILENAME | while read line
+do
+    echo "LINE: ${line}"
+done</pre></td><td><pre>逐行处理文件</pre></td></tr>
 </table></p>
 </details>
 
@@ -568,7 +558,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../languages/bash/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Bash" rel="prev">
+        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: 简介" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -577,20 +567,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Bash
+              简介
             </div>
           </div>
         </a>
       
       
         
-        <a href="../mongodb/" class="md-footer__link md-footer__link--next" aria-label="Next: MongoDB" rel="next">
+        <a href="../../databases/mysql/" class="md-footer__link md-footer__link--next" aria-label="Next: MySQL" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              MongoDB
+              MySQL
             </div>
           </div>
           <div class="md-footer__button md-icon">
