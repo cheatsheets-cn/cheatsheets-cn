@@ -1,18 +1,18 @@
-???+ cs "数据库"
+## 数据库
 
-    >cstable
-    >| SHOW DATABASES;        || 显示所有数据库 |<
-    >| DROP DATABASE db_name; || 删除指定数据库 |<
-    <cstable
+>cstable
+>| SHOW DATABASES;        || 显示所有数据库 |<
+>| DROP DATABASE db_name; || 删除指定数据库 |<
+<cstable
 
-???+ cs "索引"
+## 索引
 
-    >cstable
-    >| SHOW INDEX FROM table_name; || 查看指定表的索引 |<
-    <cstable
+>cstable
+>| SHOW INDEX FROM table_name; || 查看指定表的索引 |<
+<cstable
 
-???+ cs "SELECT"
+## SELECT
 
-    >cstable
-    >| SELECT DISTINCT column_name FROM table_name; || 从表中查询指定列去重结果 |<
-    <cstable
+>cstable
+>| SELECT DISTINCT column_name FROM table_name; || 从表中查询指定列去重结果 |<
+<cstable
