@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -426,9 +431,79 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          MongoDB
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         MongoDB
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    数据库
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    集合
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    用户
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    文档
+  </a>
+  
+    <nav class="md-nav" aria-label="文档">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    删
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    查
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -524,6 +599,78 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    数据库
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    集合
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    用户
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    文档
+  </a>
+  
+    <nav class="md-nav" aria-label="文档">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    删
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    查
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -536,23 +683,20 @@
 
   <h1>MongoDB</h1>
 
-<details class="cs" open="open">
-<summary>数据库</summary>
-<p><table class="cs-table">
+<h2 id="_1">数据库</h2>
+<table class="cs-table">
 <tr><td><pre>use DATABASE_NAME</pre></td><td><pre>切换到指定数据库，如不存在则新建</pre></td></tr>
 <tr><td><pre>db</pre></td><td><pre>查看当前数据库</pre></td></tr>
 <tr><td><pre>show dbs</pre></td><td><pre>查看所有数据库</pre></td></tr>
-</table></p>
-</details>
-<details class="cs" open="open">
-<summary>集合</summary>
-<p><table class="cs-table">
+</table>
+
+<h2 id="_2">集合</h2>
+<table class="cs-table">
 <tr><td><pre>show collections</pre></td><td><pre>查看所有集合</pre></td></tr>
-</table></p>
-</details>
-<details class="cs" open="open">
-<summary>用户</summary>
-<p><table class="cs-table">
+</table>
+
+<h2 id="_3">用户</h2>
+<table class="cs-table">
 <tr><td><pre>use admin
 db.system.users.find().pretty()</pre></td><td><pre>查看所有用户</pre></td></tr>
 <tr><td><pre>show users</pre></td><td><pre>查看当前数据库下所有用户</pre></td></tr>
@@ -567,19 +711,18 @@ db.system.users.find().pretty()</pre></td><td><pre>查看所有用户</pre></td>
     "USERNAME",
     [{role:"readWrite", db:"mydb"}]
 )</pre></td><td><pre>修改用户权限</pre></td></tr>
-</table></p>
-</details>
-<details class="cs" open="open">
-<summary>文档</summary>
-<p><strong>删</strong></p>
-<p><table class="cs-table">
+</table>
+
+<h2 id="_4">文档</h2>
+<h3 id="_5">删</h3>
+<table class="cs-table">
 <tr><td><pre>db.collection.remove({})</pre></td><td><pre>删除符合条件的文档</pre></td></tr>
-</table></p>
-<p><strong>查</strong></p>
-<p><table class="cs-table">
+</table>
+
+<h3 id="_6">查</h3>
+<table class="cs-table">
 <tr><td><pre>db.collection.count({})</pre></td><td><pre>查看符合条件文档的数目</pre></td></tr>
-</table></p>
-</details>
+</table>
 
               
             </article>

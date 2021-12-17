@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -412,9 +417,52 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          MySQL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         MySQL
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    数据库
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    索引
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    SELECT
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -524,6 +572,51 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    数据库
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    索引
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#select" class="md-nav__link">
+    SELECT
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -536,25 +629,21 @@
 
   <h1>MySQL</h1>
 
-<details class="cs" open="open">
-<summary>数据库</summary>
-<p><table class="cs-table">
+<h2 id="_1">数据库</h2>
+<table class="cs-table">
 <tr><td><pre>SHOW DATABASES;</pre></td><td><pre>显示所有数据库</pre></td></tr>
 <tr><td><pre>DROP DATABASE db_name;</pre></td><td><pre>删除指定数据库</pre></td></tr>
-</table></p>
-</details>
-<details class="cs" open="open">
-<summary>索引</summary>
-<p><table class="cs-table">
+</table>
+
+<h2 id="_2">索引</h2>
+<table class="cs-table">
 <tr><td><pre>SHOW INDEX FROM table_name;</pre></td><td><pre>查看指定表的索引</pre></td></tr>
-</table></p>
-</details>
-<details class="cs" open="open">
-<summary>SELECT</summary>
-<p><table class="cs-table">
+</table>
+
+<h2 id="select">SELECT</h2>
+<table class="cs-table">
 <tr><td><pre>SELECT DISTINCT column_name FROM table_name;</pre></td><td><pre>从表中查询指定列去重结果</pre></td></tr>
-</table></p>
-</details>
+</table>
 
               
             </article>

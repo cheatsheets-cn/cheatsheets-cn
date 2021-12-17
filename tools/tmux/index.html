@@ -65,6 +65,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -502,9 +507,59 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Tmux
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Tmux
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    会话
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    窗口
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    面板
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    其他
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -524,6 +579,58 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    会话
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    窗口
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    面板
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    其他
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -536,37 +643,32 @@
 
   <h1>Tmux</h1>
 
-<details class="cs" open="open">
-<summary>会话</summary>
-<p><table class="cs-table">
+<h2 id="_1">会话</h2>
+<table class="cs-table">
 <tr><td><pre>{PREFIX} s</pre></td><td><pre>从列表中选择会话</pre></td></tr>
 <tr><td><pre>{PREFIX} $</pre></td><td><pre>重命名当前会话</pre></td></tr>
-</table></p>
-</details>
-<details class="cs" open="open">
-<summary>窗口</summary>
-<p><table class="cs-table">
+</table>
+
+<h2 id="_2">窗口</h2>
+<table class="cs-table">
 <tr><td><pre>{PREFIX} w</pre></td><td><pre>从列表中选择窗口</pre></td></tr>
 <tr><td><pre>{PREFIX} c</pre></td><td><pre>创建一个新的窗口</pre></td></tr>
 <tr><td><pre>{PREFIX} ,</pre></td><td><pre>重命名当前窗口</pre></td></tr>
 <tr><td><pre>{PREFIX} p</pre></td><td><pre>选择上一个窗口</pre></td></tr>
 <tr><td><pre>{PREFIX} n</pre></td><td><pre>选择下一个窗口</pre></td></tr>
 <tr><td><pre>{PREFIX} :swap-window -t 0</pre></td><td><pre>将当前窗口和窗口 0 交换</pre></td></tr>
-</table></p>
-</details>
-<details class="cs" open="open">
-<summary>面板</summary>
-<p><table class="cs-table">
+</table>
+
+<h2 id="_3">面板</h2>
+<table class="cs-table">
 <tr><td><pre>{PREFIX} x</pre></td><td><pre>关闭当前面板</pre></td></tr>
-</table></p>
-</details>
-<details class="cs" open="open">
-<summary>其他</summary>
-<p><table class="cs-table">
+</table>
+
+<h2 id="_4">其他</h2>
+<table class="cs-table">
 <tr><td><pre>{PREFIX} t</pre></td><td><pre>显示时钟</pre></td></tr>
 <tr><td><pre>{PREFIX} ?</pre></td><td><pre>列出快捷键绑定</pre></td></tr>
-</table></p>
-</details>
+</table>
 
               
             </article>
