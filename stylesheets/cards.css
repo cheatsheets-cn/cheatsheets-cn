@@ -1,0 +1,53 @@
+:root {
+  --cscard-hover-color: #212121;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  width: 120px;
+  height: 80px;
+  overflow: hidden;
+  text-decoration: none;
+  background: white;
+  margin: 10px;
+  padding-top: 10px;
+  transition: transform 0.45s ease, background 0.45s ease;
+}
+
+.card-content > svg {
+  width: 60px;
+  fill: #212121;
+}
+
+.card-description {
+  opacity: 0;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  transform: translateY(-1em);
+  transition: opacity 0.45s ease, transform 0.5s ease;
+  line-height: 60px;
+}
+
+.card:hover {
+  background: var(--cscard-hover-color);
+  transform: scale(1.02);
+}
+
+.card:hover .card-content {
+  display: none;
+}
+
+.card:hover .card-description {
+  opacity: 1;
+  transform: none;
+}
