@@ -4,6 +4,10 @@
   --md-admonition-cs-color: 68, 138, 255;
 }
 
+.md-nav--integrated>.md-nav__list>.md-nav__item--active .md-nav--secondary {
+  border-left: .1rem solid #4051b5;
+}
+
 .md-typeset table.cs-table {
   border-collapse: collapse !important;
   width: 100% !important;
