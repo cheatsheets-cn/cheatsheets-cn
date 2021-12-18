@@ -9,6 +9,7 @@ theme:
     primary: white
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/cards.css
 markdown_extensions:
   - admonition
   - pymdownx.details
