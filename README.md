@@ -45,3 +45,16 @@ cd extensions/cstable/; python setup.py install; cd ../../
 # 启动服务
 mkdocs serve
 ```
+
+## FAQ
+
+### 速查表设计的原则是？
+
+- 尽量精简的语言表达。
+- 只会收集基础的命令、用法示例，不会涉及深入的原理讲解。
+
+### 哪些工具未来可能会加到速查表中？
+
+开发过程中常见通用的语言、工具等。也欢迎大家提 PR 贡献内容。
+
+判断工具是否常见的一个简单依据：如果这个工具在 [Simple Icons](https://simpleicons.org/) 中可以找到，那么就可以认为它是比较常见的。
