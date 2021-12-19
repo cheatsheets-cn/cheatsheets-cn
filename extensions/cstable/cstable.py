@@ -23,8 +23,19 @@ class CSTableProcessor(Preprocessor):
                 flag_start = False
             elif flag_start:
                 line = re.sub(">\| +", "<tr><td><pre>", line)
-                line = re.sub(" +\|\| +", "</pre></td><td><pre>", line)
                 line = re.sub(" +\|<", "</pre></td></tr>", line)
+
+                obj = re.match(".* +(\|\|+) +.*", line)
+                if obj:
+                    rowspan = len(obj.group(1)) - 1
+                    if rowspan == 1:
+                        line = re.sub(" +\|\| +", "</pre></td><td><pre>", line)
+                    else:
+                        line = re.sub(
+                            " +\|\|+ +",
+                            "</pre></td><td rowspan=%d><pre>" % rowspan,
+                            line,
+                        )
 
             new_lines.append(line)
         return new_lines

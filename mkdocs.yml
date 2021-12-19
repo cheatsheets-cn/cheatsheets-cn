@@ -10,6 +10,7 @@ theme:
     primary: white
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/cstable.css
   - stylesheets/cards.css
 markdown_extensions:
   - admonition
@@ -24,6 +25,7 @@ nav:
       - 简介: index.md
   - 语言:
       - Bash: languages/bash.md
+      - Go: languages/go.md
   - 数据库:
       - MySQL: databases/mysql.md
       - MongoDB: databases/mongodb.md
