@@ -3,7 +3,7 @@
   
   <i>中文开发者速查表。</i>
   
-  <a href="https://cheatsheets-cn.github.io/cheatsheets-cn" target="_blank">https://cheatsheets-cn.github.io/cheatsheets-cn</a>
+  <a href="https://cheatsheets-cn.github.io/cheatsheets-cn">https://cheatsheets-cn.github.io/cheatsheets-cn</a>
 </div>
 
 ## 安装
@@ -57,4 +57,4 @@ mkdocs serve
 
 开发过程中常见通用的语言、工具等。也欢迎大家提 PR 贡献内容。
 
-判断工具是否常见的一个简单依据：如果这个工具在 <a href="https://simpleicons.org/" target="_blank">Simple Icons</a> 中可以找到，那么就可以认为它是比较常见的。
+判断工具是否常见的一个简单依据：如果这个工具在 [Simple Icons](https://simpleicons.org/) 中可以找到，那么就可以认为它是比较常见的。
