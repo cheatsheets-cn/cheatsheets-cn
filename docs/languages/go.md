@@ -9,12 +9,22 @@ msg = "Hello" n       ||| 变量声明 |<
 
 ## 数据类型
 
+### 字符串
+
+>cstable
+>| for i := 0; i < len(str); i++ {
+    fmt.Println(str[i])
+} || 遍历字符串的 byte (uinit8) |<
+>| for _, s := range str {
+    fmt.Println(s)
+} || 遍历字符串的 rune (int32) |<
+<cstable
+
 ### slice
 
 >cstable
 >| var s []type                         || 声明一个 slice，但没有分配空间。此时 s 等于 nil |<
->| var s []type = make([]type, length)  |||| 使用 make() 创建 slice，指定了 slice 的 length（capacity 为可选参数） |<
->| s := make([]type, length)            |<
+>| s := make([]type, length)            ||| 使用 make() 创建 slice，指定了 slice 的 length（capacity 为可选参数）  |<
 >| s := make([]type, length, capacity)  |<
 >| s := []int{1, 2, 3}                  || 声明一个 slice 并初始化 |<
 >| s := arr[:]                          ||| 从数组 arr 初始化 slice |<
@@ -32,9 +42,8 @@ msg = "Hello" n       ||| 变量声明 |<
 ### map
 
 >cstable
->| var m map[key_type]value_type                                  || 声明一个 map，但没有分配空间。此时 m 等于 nil |<
->| var m map[key_type]value_type = make(map[key_type]value_type)  ||| 使用 make() 创建 map |<
->| m := make(map[key_type]value_type)                             |<
+>| var m map[key_type]value_type       || 声明一个 map，但没有分配空间。此时 m 等于 nil |<
+>| m := make(map[key_type]value_type)  || 使用 make() 创建 map  |<
 >| m := map[string]int {
     "item1": 1,
     "item2": 2,
