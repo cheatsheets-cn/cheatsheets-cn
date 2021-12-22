@@ -435,14 +435,21 @@
         
           <li class="md-nav__item">
   <a href="#slice" class="md-nav__link">
-    slice
+    Slice
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#map" class="md-nav__link">
-    map
+    Map
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#channel" class="md-nav__link">
+    Channel
   </a>
   
 </li>
@@ -643,7 +650,7 @@ msg = "Hello" n</pre></td><td rowspan=2><pre>变量声明</pre></td></tr>
 }</pre></td><td><pre>遍历字符串的 rune (int32)</pre></td></tr>
 </table>
 
-<h3 id="slice">slice</h3>
+<h3 id="slice">Slice</h3>
 <table class="cs-table">
 <tr><td><pre>var s []type</pre></td><td><pre>声明一个 slice，但没有分配空间。此时 s 等于 nil</pre></td></tr>
 <tr><td><pre>s := make([]type, length)</pre></td><td rowspan=2><pre>使用 make() 创建 slice，指定了 slice 的 length（capacity 为可选参数）</pre></td></tr>
@@ -661,7 +668,7 @@ msg = "Hello" n</pre></td><td rowspan=2><pre>变量声明</pre></td></tr>
 }</pre></td><td><pre>遍历 slice</pre></td></tr>
 </table>
 
-<h3 id="map">map</h3>
+<h3 id="map">Map</h3>
 <table class="cs-table">
 <tr><td><pre>var m map[key_type]value_type</pre></td><td><pre>声明一个 map，但没有分配空间。此时 m 等于 nil</pre></td></tr>
 <tr><td><pre>m := make(map[key_type]value_type)</pre></td><td><pre>使用 make() 创建 map</pre></td></tr>
@@ -674,6 +681,16 @@ msg = "Hello" n</pre></td><td rowspan=2><pre>变量声明</pre></td></tr>
 <tr><td><pre>for key, value := range m {
     fmt.Println(key, value)
 }</pre></td><td><pre>遍历 map 中的内容</pre></td></tr>
+</table>
+
+<h3 id="channel">Channel</h3>
+<table class="cs-table">
+<tr><td><pre>ch = make(chan int)</pre></td><td><pre>创建无缓冲通道</pre></td></tr>
+<tr><td><pre>ch = make(chan int, 0)</pre></td><td><pre>创建无缓冲通道</pre></td></tr>
+<tr><td><pre>ch = make(chan int, 3)</pre></td><td><pre>创建容量为 3 的缓冲通道</pre></td></tr>
+<tr><td><pre>ch <- x</pre></td><td><pre>发送语句</pre></td></tr>
+<tr><td><pre>x = <-ch</pre></td><td><pre>接收语句</pre></td></tr>
+<tr><td><pre>close(ch)</pre></td><td><pre>关闭通道</pre></td></tr>
 </table>
 
               
