@@ -20,7 +20,7 @@ msg = "Hello" n       ||| 变量声明 |<
 } || 遍历字符串的 rune (int32) |<
 <cstable
 
-### slice
+### Slice
 
 >cstable
 >| var s []type                         || 声明一个 slice，但没有分配空间。此时 s 等于 nil |<
@@ -39,7 +39,7 @@ msg = "Hello" n       ||| 变量声明 |<
 } || 遍历 slice |<
 <cstable
 
-### map
+### Map
 
 >cstable
 >| var m map[key_type]value_type       || 声明一个 map，但没有分配空间。此时 m 等于 nil |<
@@ -53,4 +53,15 @@ msg = "Hello" n       ||| 变量声明 |<
 >| for key, value := range m {
     fmt.Println(key, value)
 }                    || 遍历 map 中的内容 |<
+<cstable
+
+### Channel
+
+>cstable
+>| ch = make(chan int)    || 创建无缓冲通道 |<
+>| ch = make(chan int, 0) || 创建无缓冲通道 |<
+>| ch = make(chan int, 3) || 创建容量为 3 的缓冲通道 |<
+>| ch <- x                || 发送语句 |<
+>| x = <-ch               || 接收语句 |<
+>| close(ch)              || 关闭通道 |<
 <cstable
