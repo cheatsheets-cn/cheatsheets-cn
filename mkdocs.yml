@@ -26,6 +26,8 @@ nav:
   - 语言:
       - Bash: languages/bash.md
       - Go: languages/go.md
+  - 基础设施:
+      - Docker: infrastructure/docker.md
   - 数据库:
       - MySQL: databases/mysql.md
       - MongoDB: databases/mongodb.md
