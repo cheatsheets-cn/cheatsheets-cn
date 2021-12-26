@@ -14,6 +14,7 @@
 do
     echo "LINE: ${line}"
 done || 逐行处理文件 |<
+>| cat FILENAME | expand -t 4 || 以 tab 长度为 4 打印文件 |<
 <cstable
 
 ## 工具

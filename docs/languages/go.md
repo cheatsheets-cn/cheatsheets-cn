@@ -65,3 +65,16 @@ msg = "Hello" n       ||| 变量声明 |<
 >| x = <-ch               || 接收语句 |<
 >| close(ch)              || 关闭通道 |<
 <cstable
+
+## 流程控制
+
+>cstable
+>| switch num {
+case 1:
+    fun1()
+case 2:
+    fun2()
+default:
+    fun3()
+} || Switch |<
+<cstable
