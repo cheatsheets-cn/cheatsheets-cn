@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://cqroot.github.io/cheatsheets-cn/databases/mongodb/">
+        <link rel="canonical" href="https://cqroot.github.io/cheatsheets-cn/databases/redis/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.3">
     
     
       
-        <title>MongoDB - Cheatsheets CN</title>
+        <title>Redis - Cheatsheets CN</title>
       
     
     
@@ -69,11 +69,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#_1" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -103,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MongoDB
+              Redis
             
           </span>
         </div>
@@ -520,89 +515,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          MongoDB
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../mongodb/" class="md-nav__link">
         MongoDB
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    数据库
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    集合
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    用户
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    文档
-  </a>
-  
-    <nav class="md-nav" aria-label="文档">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    删
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    查
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -612,11 +529,19 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../redis/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Redis
       </a>
+      
     </li>
   
 
@@ -730,52 +655,18 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/cqroot/cheatsheets-cn/edit/master/docs/databases/mongodb.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/cqroot/cheatsheets-cn/edit/master/docs/databases/redis.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
-  <h1>MongoDB</h1>
+  <h1>Redis</h1>
 
-<h2 id="_1">数据库</h2>
 <table class="cs-table">
-<tr><td><pre>use DATABASE_NAME</pre></td><td><pre>切换到指定数据库，如不存在则新建</pre></td></tr>
-<tr><td><pre>db</pre></td><td><pre>查看当前数据库</pre></td></tr>
-<tr><td><pre>show dbs</pre></td><td><pre>查看所有数据库</pre></td></tr>
-</table>
-
-<h2 id="_2">集合</h2>
-<table class="cs-table">
-<tr><td><pre>show collections</pre></td><td><pre>查看所有集合</pre></td></tr>
-</table>
-
-<h2 id="_3">用户</h2>
-<table class="cs-table">
-<tr><td><pre>use admin
-db.system.users.find().pretty()</pre></td><td><pre>查看所有用户</pre></td></tr>
-<tr><td><pre>show users</pre></td><td><pre>查看当前数据库下所有用户</pre></td></tr>
-<tr><td><pre>db.createUser({
-    user:"USERNAME",
-    pwd:"PASSWORD",
-    roles:[
-        {role:"readWrite", db:"mydb"},
-    ]
-})</pre></td><td><pre>创建用户</pre></td></tr>
-<tr><td><pre>db.grantRolesToUser(
-    "USERNAME",
-    [{role:"readWrite", db:"mydb"}]
-)</pre></td><td><pre>修改用户权限</pre></td></tr>
-</table>
-
-<h2 id="_4">文档</h2>
-<h3 id="_5">删</h3>
-<table class="cs-table">
-<tr><td><pre>db.collection.remove({})</pre></td><td><pre>删除符合条件的文档</pre></td></tr>
-</table>
-
-<h3 id="_6">查</h3>
-<table class="cs-table">
-<tr><td><pre>db.collection.count({})</pre></td><td><pre>查看符合条件文档的数目</pre></td></tr>
+<tr><td><pre>AUTH "password"</pre></td><td><pre>认证密码</pre></td></tr>
+<tr><td><pre>PING</pre></td><td><pre>验证服务</pre></td></tr>
+<tr><td><pre>KEYS *</pre></td><td><pre>显示所有 key</pre></td></tr>
+<tr><td><pre>LLEN key</pre></td><td><pre>获取列表 key 长度</pre></td></tr>
 </table>
 
               
@@ -790,7 +681,7 @@ db.system.users.find().pretty()</pre></td><td><pre>查看所有用户</pre></td>
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../mysql/" class="md-footer__link md-footer__link--prev" aria-label="Previous: MySQL" rel="prev">
+        <a href="../mongodb/" class="md-footer__link md-footer__link--prev" aria-label="Previous: MongoDB" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -799,20 +690,20 @@ db.system.users.find().pretty()</pre></td><td><pre>查看所有用户</pre></td>
               <span class="md-footer__direction">
                 Previous
               </span>
-              MySQL
+              MongoDB
             </div>
           </div>
         </a>
       
       
         
-        <a href="../redis/" class="md-footer__link md-footer__link--next" aria-label="Next: Redis" rel="next">
+        <a href="../sqlite/" class="md-footer__link md-footer__link--next" aria-label="Next: SQLite" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Redis
+              SQLite
             </div>
           </div>
           <div class="md-footer__button md-icon">
