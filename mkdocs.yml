@@ -29,6 +29,7 @@ nav:
       - Python: languages/python.md
   - 基础设施:
       - Docker: infrastructure/docker.md
+      - Kubernetes: infrastructure/kubernetes.md
   - 数据库:
       - MySQL: databases/mysql.md
       - MongoDB: databases/mongodb.md
