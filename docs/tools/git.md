@@ -12,3 +12,16 @@
 >| git stash push FILENAME || 隐藏指定文件 |<
 >| git stash pop           || 恢复隐藏的工作现场 |<
 <cstable
+
+## Log
+
+>cstable
+>| git log                  || 显示提交日志 |<
+>| git log --pretty=oneline || 以每次一行显示提交日志 |<
+<cstable
+
+## 远程仓库
+
+>cstable
+>| git fetch origin pull/PRID/head:本地分支 || 拉取 pr |<
+<cstable
