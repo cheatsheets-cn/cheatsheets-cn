@@ -20,10 +20,10 @@
 ## 日期
 
 >cstable
->| SELECT DATEDIFF('1997-12-31 23:59:59', '1997-12-30'); | 两个时间相减，返回天数 |
->| SELECT NOW(); | 返回当前日期、时间 |<
->| SELECT CURRENT_TIMESTAMP; | 返回当前日期、时间 |<
->| SELECT CURRENT_TIMESTAMP(); | 返回当前日期、时间 |<
->| SELECT CURDATE(); | 返回当前日期 |<
->| SELECT DATE_ADD(NOW(), INTERVAL 1 DAY); | 日期加 1 天 |<
+>| SELECT DATEDIFF('1997-12-31 23:59:59', '1997-12-30'); || 两个时间相减，返回天数 |
+>| SELECT NOW();                                         || 返回当前日期、时间 |<
+>| SELECT CURRENT_TIMESTAMP;                             || 返回当前日期、时间 |<
+>| SELECT CURRENT_TIMESTAMP();                           || 返回当前日期、时间 |<
+>| SELECT CURDATE();                                     || 返回当前日期 |<
+>| SELECT DATE_ADD(NOW(), INTERVAL 1 DAY);               || 日期加 1 天 |<
 <cstable
