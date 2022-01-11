@@ -4,6 +4,13 @@
 >| git difftool --extcmd vimdiff filename || 指定使用 vimdiff 查看文件改动 |<
 <cstable
 
+## Tag
+
+>cstable
+>| git tag -l <pattern> || 列出符合 pattern 的 tag。
+如果没有提供 pattern，列出所有 tag |<
+<cstable
+
 ## Stash
 
 >cstable
